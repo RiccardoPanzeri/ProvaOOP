@@ -24,7 +24,7 @@ public:
 		this->targa = targa;
 		this->motoreAcceso = motoreAcceso;
 		this->fariAccesi = fariAccesi;
-		cout << "Creata " << this->marca << " " << this->modello << "con targa: " << this->targa << endl << endl;//comunico che l'oggetto è stato creato regolarmente;
+		cout << "Creata " << this->marca << " " << this->modello << " con targa: " << this->targa << endl << endl;//comunico che l'oggetto è stato creato regolarmente;
 	}
 	//setter: utilizzando i metodi "setter", permetto la modifica delle proprietà dell'oggetto in maniera controllata;
 	void cambiaMarca(string marca) {
