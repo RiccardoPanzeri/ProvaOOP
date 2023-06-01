@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
-
+//Costruttore
 Auto::Auto(string marcaAuto, string modelloAuto, string annoProduzioneAuto, string tipoCarburanteAuto, string numeroPorteAuto, string targaAuto, bool mAcceso, bool fAccesi) {
 	marca = marcaAuto; //this è il puntatore che indica l'indirizzo di partenza dell'oggetto: lo utilizzo per fare riferimento all'oggetto specifico che sto creando o modificando; 
 	modello = modelloAuto;
@@ -14,11 +14,11 @@ Auto::Auto(string marcaAuto, string modelloAuto, string annoProduzioneAuto, stri
 	fariAccesi = fAccesi;
 	cout << "Creata " << this->marca << " " << this->modello << " con targa: " << this->targa << endl << endl;//comunico che l'oggetto è stato creato regolarmente;
 }
-
+//Costruttore generico
 Auto::Auto() {
 	cout << "Auto generica Creata" << endl << endl;
 };
-
+//setter
 void Auto::cambiaMarca(string marcaAuto) {
 	marca = marcaAuto;
 }
@@ -59,7 +59,7 @@ void Auto::accendiFari() {
 	}
 }
 
-
+//getter
 string Auto::getMarca() {
 	return marca;
 }
